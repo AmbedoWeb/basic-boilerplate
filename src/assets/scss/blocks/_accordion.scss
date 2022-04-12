@@ -1,0 +1,111 @@
+.accordion {
+    $root: &;
+    $box: #{$root}__box;
+    $active: #{$box}--active;
+
+    margin-bottom: 50px;
+    
+    &__container {
+        // @include container();
+    }
+    
+    &__box {
+        position: relative;
+        margin: 0 0 10px 0;
+        background: $accordionContentBg;
+
+        &--active {
+            
+        }
+
+    }
+
+    &__label {
+        background: $accordionBg;
+        padding: 12px 10px 10px;
+        cursor: pointer;
+        transition: .2s;
+        position: relative;
+        margin: 0;
+        @include p();
+        color: $accordionColor;
+        text-transform: uppercase;
+
+        &:hover {
+            background: $accordionBgHover;
+            color: $accordionColorHover;
+            transition: .2s;
+
+            &::before,
+            &::after {
+                background: $white;
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translatey(-50%);
+            font-size: 1.5em;
+
+            width: 10px;
+            height: 2px;
+            background: $accordionColor;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 24px;
+            transform: translatey(-50%);
+            font-size: 1.5em;
+
+            width: 2px;
+            height: 10px;
+            background: $accordionColor;
+        }
+
+        #{$active} & {
+            background: $accordionBgHover;
+            color: $accordionColorHover;
+            
+            &::before {
+                content: '';
+                width: 10px;
+                height: 2px;
+                background: $accordionColorHover;
+
+            }
+
+            &::after {
+                display: none;
+
+            }
+        }
+    }
+
+    &__content {
+        height: 0;
+        overflow: hidden; 
+        transition: 0.5s;
+        //overflow-y: auto;
+        padding: 0 10px;
+        @include p();
+        color: $accordionContentColor;
+
+        #{$active} & {
+         height: 150px;   
+         padding: 10px;
+        }
+
+        a {
+            @include a();
+            color: $accordionColor;
+            font-weight: $f-bold;
+        }
+
+    }
+}
