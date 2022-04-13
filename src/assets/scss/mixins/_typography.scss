@@ -3,7 +3,17 @@
     font-size: 120px;
     line-height: 125px;
     font-weight: $f-light;
-    color: $tertiary;
+    color: $textPrimary;
+
+    @media (max-width: 1024px) {
+        font-size: 80px;
+        line-height: 85px;
+    }
+
+    @media (max-width: 599px) {
+        font-size: 40px;
+        line-height: 45px;
+    }
 }
 
 @mixin h2() {
@@ -11,7 +21,17 @@
     font-size: 80px;
     line-height: 85px;
     font-weight: $f-light;
-    color: $tertiary;
+    color: $textPrimary;
+
+    @media (max-width: 1024px) {
+        font-size: 60px;
+        line-height: 65px;
+    }
+
+    @media (max-width: 599px) {
+        font-size: 35px;
+        line-height: 40px;
+    }
 }
 
 @mixin h3() {
@@ -19,7 +39,7 @@
     font-size: 60px;
     line-height: 65px;
     font-weight: $f-light;
-    color: $tertiary;
+    color: $textPrimary;
 
     @media (max-width: 599px) {
         font-size: 40px;
@@ -32,7 +52,7 @@
     font-size: 40px;
     line-height: 45px;
     font-weight: $f-light;
-    color: $tertiary;
+    color: $textPrimary;
 }
 
 @mixin p() {
@@ -40,7 +60,7 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: $f-regular;
-    color: $tertiary;
+    color: $textPrimary;
     letter-spacing: 0.02em;
 }
 
@@ -48,14 +68,14 @@
     font-family: $fontprimary;
     font-size: 16px;
     line-height: 20px;
-    font-weight: $f-regular;
-    color: $blueblack;
+    font-weight: $f-bold;
+    color: $teal;
     text-decoration: none;
     transition: .2s;
     display: inline-block;
 
     &:hover {
-        color: $darksalmon;
+        color: $blueblack;
     }
 }
 
@@ -70,6 +90,6 @@
     text-transform: lowercase;
 
     &:hover {
-        color: $darksalmon;
+        color: $blueblack;
     }
 }

@@ -1,0 +1,3 @@
+@@include('accordion-image.html', {
+      'image': './assets/images/dog-laptop-sofa.jpeg',
+    })

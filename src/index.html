@@ -8,83 +8,92 @@
   @@include('nav.html')
 
   <main>
-  <div class="body-text">
-    <div class="body-text__container container">
-      <h1 class="body-text__title">Nicola Hogg</h1>
+    @@include('spacer.html')
+    <div class="body-text">
+      <div class="body-text__container container">
+        <h1 class="body-text__title">Ambedo Web Development</h1>
+      </div>
     </div>
-  </div>
 
-  @@include('text-image-bespoke.html', {
-  'classname': 'text-image--reverse',
-  'classname-image': 'image--circle-mobile',
-  'classname-border': 'text-image__border--circle-mobile',
-  'image': './assets/images/me.jpg',
-  'title_two': 'Portfolio',
-  'content_two': 'Welcome! I am a web developer with 2+ years of full stack commercial experience with Wordpress. I also have several hobby projects which can be found in my personal projects section. I have also recently launched my own Freelancing company Ambedo Web Development. I am only considering fully remote roles at this time. My skillset includes but is not limited to: ',
-  'list_one': 'HTML',
-  'list_two': 'SCSS - BEM',
-  'list_three': 'Javascript - VueJS - React',
-  'list_four': 'Node and PHP',
-  'list_five': 'Wordpress',
-  'list_six': 'Forge and Netlify',
-  'button_text': 'View my LinkedIn',
-  'button_link': 'https://www.linkedin.com/in/nicola-hogg/',
-  })
-
-  <div class="body-text">
-    <div class="body-text__container container">
-      <h2 class="body-text__header">My Work</h2>
-    </div>
-  </div>
-
-  <div class="buttons">
-    @@include('./components/button-lines.html', {
-    'title': 'Commercial',
-    'button_link': 'portfolio-commercial.html',
+    @@include('./components/image-container.html', {
+    'classname': 'image-container--landscape',
+    'image': './assets/images/dog-laptop-sofa.jpeg'
     })
-    @@include('./components/button-lines.html', {
-    'title': 'Personal',
-    'button_link': 'portfolio-personal.html',
+
+
+    <div class="body-text body-text--full-width">
+      <div class="body-text__container container">
+        <h2 class="body-text__header">Responsive websites built for your needs</h2>
+        <p class="body-text__text">In need of a website for your business? In need of a portfolio website? Ranging from
+          a single page site, to a multipage site, or even a site with a custom built CMS, Ambedo can make a website for
+          you in a quick turn around time!</p>
+      </div>
+    </div>
+
+    @@include('accordion-image.html', {
+      'image': './assets/images/dog-laptop-sofa.jpeg',
     })
-    @@include('./components/button-lines.html', {
-    'title': 'Freelance',
-    'button_link': 'portfolio-freelance.html',
+
+    <div class="body-text body-text--full-width">
+      <div class="body-text__container container">
+      <h2 class="body-text__header">Ambedo Web Development Projects</h2>
+      <p class="body-text__text">Below are examples of websites I've built as Ambedo Web Developement. To see examples of my past web agency work for other commercial examples of what I can build, please view my personal portfolio by <a href="https://hoggsofwar.github.io/">clicking here</a></p>
+      </div>
+    </div>
+
+
+    @@include('carousel.html', {
+    'classname': 'carousel--side-buttons',
     })
-  </div>
 
-  <div class="body-text body-text--reverse">
-    <div class="body-text__container container">
-      <h2 class="body-text__header">My Commercial Wordpress Developments</h2>
-      <p class="body-text__text body-text__text--right">Below are some examples of Wordpress sites I either built by
-        myself in their entirety or worked on with another developer whilst I was part of a web agency. For more
-        information about each project please visit my portfolio section by clicking <a class="body-text__link"
-          href="/portfolio">here</a></p>
+    <div class="body-text body-text--full-width">
+      <div class="body-text__container container">
+      <h2 class="body-text__header">Instagram</h2>
+      <p class="body-text__text">Follow Ambedo Web Development on <a href="https://www.instagram.com/ambedoweb/">Instagram</a> to keep up to date with exciting web projects and what developer life is like at Ambedo!</a></p>
+      </div>
     </div>
-  </div>
 
-  @@include('carousel.html', {
-  'classname': 'carousel--side-buttons',
-  })
+    @@include('image-grid.html', {
+      'classname': 'image-container--circle',
+      'classname_image': 'image--zoom',
+      'image_one': './assets/images/grid/mobile-site-demo.jpeg',
+      'image_link_one': 'https://www.instagram.com/ambedoweb',
+      'classname': 'image-container--circle',
+      'classname_image': 'image--zoom',
+      'image_two': './assets/images/grid/time-clock.jpeg',
+      'image_link_two': 'https://www.instagram.com/ambedoweb',
+      'classname': 'image-container--circle',
+      'classname_image': 'image--zoom',
+      'image_three': './assets/images/grid/grow-your-business.jpeg',
+      'image_link_three': 'https://www.instagram.com/ambedoweb',
+      'classname': 'image-container--circle',
+      'classname_image': 'image--zoom',
+      'image_four': './assets/images/grid/flowers.jpeg',
+      'image_link_four': 'https://www.instagram.com/ambedoweb',
+      'classname': 'image-container--circle',
+      'classname_image': 'image--zoom',
+      'image_five': './assets/images/grid/ideas.jpeg',
+      'image_link_five': 'https://www.instagram.com/ambedoweb',
+      'classname': 'image-container--circle',
+      'classname_image': 'image--zoom',
+      'image_six': './assets/images/grid/social-media.jpeg',
+      'image_link_six': 'https://www.instagram.com/ambedoweb',
+      'classname': 'image-container--circle',
+      'classname_image': 'image--zoom',
+      'image_seven': './assets/images/grid/heart.jpeg',
+      'image_link_seven': 'https://www.instagram.com/ambedoweb',
+      'classname': 'image-container--circle',
+      'classname_image': 'image--zoom',
+      'image_eight': './assets/images/grid/minimal.jpeg',
+      'image_link_eight': 'https://www.instagram.com/ambedoweb',
+      'classname': 'image-container--circle',
+      'classname_image': 'image--zoom',
+      'image_nine': './assets/images/grid/mobile-site-demo-two.jpeg',
+      'image_link_nine': 'https://www.instagram.com/ambedoweb',
+    })
 
-  <div class="body-text body-text">
-    <div class="body-text__container container">
-      <h2 class="body-text__header">My hobbies</h2>
-    </div>
-  </div>
 
-  @@include('accordion.html')
 
-  <div class="body-text body-text--reverse">
-    <div class="body-text__container container">
-      <h2 class="body-text__header">Click below for my art account</h2>
-    </div>
-  </div>
-
-  @@include('./components/image-container-link.html', {
-  'classname': 'image-container--circle',
-  'image': './assets/images/winds-canvas-art-spiritfarer.jpg',
-  'image_link': 'https://www.instagram.com/windscanvas'
-  })
   </main>
 
   @@include('footer.html')

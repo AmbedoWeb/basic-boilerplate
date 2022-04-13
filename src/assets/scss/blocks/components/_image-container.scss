@@ -6,6 +6,10 @@
 
     margin-bottom: 50px;
 
+    @media (max-width: 1024px) {
+        margin-bottom: 40px;
+    }
+
     &--portrait {
 
     }

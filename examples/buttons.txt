@@ -1,0 +1,19 @@
+//buttons 
+
+
+//these are the buttons with the lines that animate out on hover
+
+<div class="buttons">
+    @@include('./components/button-lines.html', {
+    'title': 'Commercial',
+    'button_link': 'portfolio-commercial.html',
+    })
+    @@include('./components/button-lines.html', {
+    'title': 'Personal',
+    'button_link': 'portfolio-personal.html',
+    })
+    @@include('./components/button-lines.html', {
+    'title': 'Freelance',
+    'button_link': 'portfolio-freelance.html',
+    })
+</div>

@@ -1,0 +1,34 @@
+//body text
+
+
+//reverse
+
+    <div class="body-text body-text--reverse">
+      <div class="body-text__container container">
+        <h2 class="body-text__header">My Commercial Wordpress Developments</h2>
+        <p class="body-text__text body-text__text--right">Below are some examples of Wordpress sites I either built by
+          myself in their entirety or worked on with another developer whilst I was part of a web agency. For more
+          information about each project please visit my portfolio section by clicking <a class="body-text__link"
+            href="/portfolio">here</a></p>
+      </div>
+    </div>
+
+
+//full-width
+
+    <div class="body-text body-text--full-width">
+        <div class="body-text__container container">
+        <h2 class="body-text__header">Responsive websites built for your needs</h2>
+        <p class="body-text__text">In need of a website for your business? In need of a portfolio website? Ranging from
+            a single page site, to a multipage site, or even a site with a custom built CMS, Ambedo can make a website for
+            you in a quick turn around time!</p>
+        </div>
+    </div>
+
+//left-aligned
+
+   <div class="body-text body-text">
+      <div class="body-text__container container">
+        <h2 class="body-text__header">My hobbies</h2>
+      </div>
+    </div>

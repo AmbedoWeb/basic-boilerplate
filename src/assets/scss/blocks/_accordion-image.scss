@@ -1,0 +1,35 @@
+.accordion-image {
+    $root: &;
+    $reverse: #{$root}--reverse;
+
+    margin-bottom: 60px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+        #{$reverse} & {
+            flex-direction: row-reverse;
+
+            @media (max-width: 1024px) {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 825px) {
+            flex-direction: column;
+        }
+    }
+
+    .accordion {
+        width: 48%;
+
+        @media (max-width: 1024px) {
+
+        }
+
+        @media (max-width: 825px) {
+            width: 100%;
+        }
+    }
+}

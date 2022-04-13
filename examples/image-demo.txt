@@ -1,0 +1,16 @@
+    @@include('./components/image-container.html', {
+      'classname': 'image-container--portrait',
+      'image': './assets/images/kyo.jpg'
+    })
+
+    //we have variables like image-container--portrait or image-container--circle. 
+    These are all in the components > image.scss file.
+
+
+    //this is a standalone circular image with zoom on hover.
+
+    @@include('./components/image-container-link.html', {
+    'classname': 'image-container--circle',
+    'image': './assets/images/winds-canvas-art-spiritfarer.jpg',
+    'image_link': 'https://www.instagram.com/windscanvas'
+    })

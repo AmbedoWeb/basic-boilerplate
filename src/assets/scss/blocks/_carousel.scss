@@ -182,7 +182,7 @@
 
         &--selected {
             .carousel__button {
-                background: $coral;
+                background: $carButtonSelectedBg;
                 width: 75px;
                 height: 75px;
                 transition: 0.5s all;
@@ -191,7 +191,7 @@
     }
 
     &__button {
-        background: $salmon;
+        background: $carButtonBg;
         // border-radius: 50%;
         // height: 30px;
         // width: 30px;
@@ -208,7 +208,7 @@
         }
 
         &:hover {
-            background: $coral;
+            background: $carButtonSelectedBg;
         }
 
         // &--selected {

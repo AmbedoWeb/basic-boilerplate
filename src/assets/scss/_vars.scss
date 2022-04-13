@@ -22,10 +22,13 @@ $khula: 'khula', sans-serif;
 $monsterrat: 'monsterrat', sans-serif;
 
 // theme
-$primary: $blueblack;
-$secondary: $beigepink;
+$primary: $lightgreen;
+$secondary: $teal;
 $tertiary: $white;
 $fontprimary: $khula;
+
+$bodyBg: $white;
+$textPrimary: $primary;
 
 //buttons
 /**basic button**/
@@ -47,9 +50,11 @@ $socialBgHover: $darksalmon;
 $socialFillHover: $white;
 
 //carousel
+$carButtonSelectedBg: $secondary;
+$carButtonBg: $primary;
 
 //accordion
-$accordionBg: $darksalmon;
+$accordionBg: $primary;
 $accordionColor: $blueblack;
 $accordionContentBg: $white;
 $accordionContentColor: $blueblack;
@@ -57,7 +62,15 @@ $accordionBgHover: $blueblack;
 $accordionColorHover: $white;
 
 //nav
+$navBg: $primary;
+$navMobileHeight: 60px;
+
+//socials
+$socialFill: $white;
+$socialHover: $blueblack;
+
 //footer
+$footerBg: $primary;
 
 //unicode bullet points
 /** 

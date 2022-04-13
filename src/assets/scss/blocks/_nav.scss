@@ -6,17 +6,17 @@
     $hamactive: #{$hambtn}--active;
     $active: #{$root}--active;
 
-    background: $primary;
+    background: $navBg;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     z-index: 10;
-    padding: 20px 0;
+    padding: 10px 0;
 
     &--desktop {
-        height: 40px;
+        //height: 40px;
 
         @media (max-width: 1023px) {
             display: none;
@@ -24,7 +24,7 @@
     }
 
     &--mobile {
-        height: 40px;
+        height: $navMobileHeight;
         
 
         @media (min-width: 1024px) {
@@ -51,6 +51,10 @@
         #{$desktop} & {
             align-items: center;
 
+        }
+
+        &--top {
+            align-items: center;
         }
 
         &--menu-items {

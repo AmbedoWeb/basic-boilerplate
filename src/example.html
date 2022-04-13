@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('meta.html', {
-    "title": "Home"
-  })
-  <body>
-    @@include('header.html')
+@@include('meta.html', {
+"title": "Freelance Portfolio"
+})
 
-    <div>Here is some content.</div>
+<body>
+    @@include('nav.html')
 
-    <a href="about.html">About</a>
+    <main>
+        <div class="body-text">
+            <div class="body-text__container container">
+                <h1 class="body-text__header">Demo Page</h1>
+            </div>
+        </div>
+    
+        <div class="body-text">
+            <div class="body-text__container container">
+                <p class="body-text__text">Demo Text</p>
+            </div>
+        </div>
+    </main>
+    
+    @@include('footer.html')
 
-    <img src="./assets/images/kyo.png" alt="" />
+    <script src="assets/js/main.js"> </script>
 
-    <img src="twitter.svg"></img>
 
-  </body>
-</html>
+</body>

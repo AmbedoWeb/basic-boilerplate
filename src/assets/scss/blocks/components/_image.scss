@@ -19,6 +19,22 @@
         }
     }
 
+    &--accordion-image {
+        width: 48%;
+        padding-top: 30%;
+
+        /**for portrait**/
+        // width: 33%;
+        // padding-top: 50%;
+
+        @media (max-width: 825px) {
+            width: 100%;
+            //padding-top: 65%;
+            padding-top: 50%;
+            margin-bottom: 20px;
+        }
+    }
+
     &--text-image-bespoke {
         width: 100%;
         padding-top: 130%;
@@ -55,6 +71,10 @@
         @media (max-width: 600px) {
             width: 100%;
         }
+    }
+
+    &--square {
+        padding-top: 100%;
     }
 
     &--zoom {

@@ -1,5 +1,5 @@
 .footer {
-    background: $primary;
+    background: $footerBg;
 
     @media (min-width: 1023px) {
         height: 283px;
@@ -45,6 +45,9 @@
 
     &__column {
         padding-left: 0;
+        &:first-of-type {
+            margin-right: 20px;
+        }
 
         @media (max-width: 400px) {
             width: 100%;

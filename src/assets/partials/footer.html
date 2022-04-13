@@ -6,20 +6,22 @@
             })
             <div class="footer__columns">
                 <ul class="footer__column">
-                    <li class="footer__item"><a href="/portfolio-commercial.html">commercial portfolio</a></li>
-                    <li class="footer__item"><a href="/portfolio-personal.html">personal portfolio</a></li>
-                    <li class="footer__item"><a href="/portfolio-freelance.html">freelance portfolio</a></li>
+                    <li class="footer__item"><a href="/services.html">web development services</a></li>
+                    <li class="footer__item"><a href="/review.html">reviews</a></li>
+                    <li class="footer__item"><a href="/contact.html">contact</a></li>
                 </ul>
                 <ul class="footer__column">
-                    <li class="footer__item"><a href="/contact.html">contact</a></li>
-                    <li class="footer__item"><a href="/freelancing-services.html">freelance</a></li>
                     <li class="footer__item"><a target="_blank" href="https://www.fiverr.com/ambedoweb">fiverr</a></li>
+                    <li class="footer__item"><a href="/contact.html">linkedin</a></li>
+                    <li class="footer__item"><a href="/freelancing-services.html">freelance</a></li>
                 </ul>
             </div>
-            @@include('./components/socials.html')
+            @@include('./components/socials.html' {
+                'classname': 'socials--basic'
+            })
         </div>
         <div class="footer__bottom">
-            <p class="footer__terms">© 2022 Nicola Hogg · Site by Nicola Hogg (<a href="/">AmbedoWeb</a>)</p>
+            <p class="footer__terms">© 2022 Ambedo Web · Site by <a href="/">AmbedoWeb</a></p>
         </div>
     </div>
 </footer>
