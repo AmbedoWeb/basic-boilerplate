@@ -22,12 +22,13 @@
 
         a {
             @include a();
+            color: $white;
             display: inline-block;
             padding: 20px 30px;
-            background: $darksalmon;
+            background: $primary;
 
             &:hover {
-                background: $blueblack;
+                background: $teal;
             }
         }
 
